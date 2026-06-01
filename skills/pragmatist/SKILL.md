@@ -1,5 +1,9 @@
 ---
 name: pragmatist
+description: Pragmatist — Does this matter in practice?
+---
+
+name: pragmatist
 description: "Adversarial reviewer focused on practical applicability, cost, and real-world constraints. Use when evaluating whether something actually works outside the lab."
 ---
 

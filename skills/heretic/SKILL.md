@@ -1,5 +1,9 @@
 ---
 name: heretic
+description: Heretic — 50 Hypotheses Engine
+---
+
+name: heretic
 description: "Generate 50 wild hypotheses from a title + abstract alone, score each against the actual paper, and find the 'haunting idea' — what the paper SHOULD have been. Use when reviewing research, brainstorming, or breaking out of consensus thinking."
 argument-hint: "Paper title / abstract / claim to challenge"
 ---

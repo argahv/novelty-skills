@@ -1,5 +1,9 @@
 ---
 name: theorist
+description: Theorist — Where's the formal proof?
+---
+
+name: theorist
 description: "Adversarial reviewer that attacks formal proofs, mathematical rigor, and theoretical foundations. Use to stress-test any paper or proposal."
 ---
 

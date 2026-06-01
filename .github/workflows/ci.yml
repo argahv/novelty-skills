@@ -1,0 +1,21 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  check-structure:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify skills
+        run: |
+          for d in skills/*/; do
+            name=$(basename "$d")
+            test -f "$d/SKILL.md" || { echo "MISSING: $d/SKILL.md"; exit 1; }
+            echo "  ✓ $name"
+          done
+          echo "All $(ls -d skills/*/ | wc -l) skills verified."

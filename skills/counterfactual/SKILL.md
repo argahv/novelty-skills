@@ -1,5 +1,9 @@
 ---
 name: counterfactual
+description: Counterfactual — The Field Without Its Most-Cited Papers
+---
+
+name: counterfactual
 description: "Rewrite a field's history without the most-cited papers. Find what would have been invented instead. Use when looking for overlooked approaches or questioning canonical results."
 argument-hint: "Topic, paper, or field to explore counterfactually"
 ---

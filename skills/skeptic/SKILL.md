@@ -1,5 +1,9 @@
 ---
 name: skeptic
+description: Skeptic — Show me error bars
+---
+
+name: skeptic
 description: "Default: everything is wrong. Show me error bars. Use when you need the strongest possible challenge to any claim."
 ---
 

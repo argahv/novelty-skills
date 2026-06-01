@@ -1,5 +1,9 @@
 ---
 name: cross-pollinator
+description: Cross-Pollinator — Solutions from 15 Distant Fields
+---
+
+name: cross-pollinator
 description: "Import solutions from distant fields to solve a problem. Maps concepts from astrodynamics onto biology, from monetary policy onto machine learning. Use when stuck on a hard problem or asked for creative approaches."
 argument-hint: "The problem to solve"
 ---

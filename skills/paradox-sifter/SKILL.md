@@ -1,5 +1,9 @@
 ---
 name: paradox-sifter
+description: Paradox Sifter — Find the Contradictions Everyone Ignored
+---
+
+name: paradox-sifter
 description: "Cross-reference every 'Limitations' section across papers on the same topic to find contradictions and ignored tensions. Use when doing literature review, identifying research gaps, or writing a paper."
 argument-hint: "Topic or set of papers to analyze"
 ---

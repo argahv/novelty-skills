@@ -1,5 +1,9 @@
 ---
 name: assumption-excavator
+description: Assumption Excavator — Find What Everyone Assumed
+---
+
+name: assumption-excavator
 description: "Find unstated assumptions in any plan, design, or argument. Test what breaks if each assumption is false. Use when reviewing a design, planning a project, or reading a paper."
 argument-hint: "The plan, design, or argument to excavate"
 ---

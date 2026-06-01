@@ -1,5 +1,9 @@
 ---
 name: empiricist
+description: Empiricist — Your baseline is wrong
+---
+
+name: empiricist
 description: "Adversarial reviewer that attacks experimental design, baselines, and statistical methodology. Use before submitting any empirical paper."
 ---
 

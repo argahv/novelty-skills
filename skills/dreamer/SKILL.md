@@ -1,5 +1,9 @@
 ---
 name: dreamer
+description: Dreamer — You stopped too early
+---
+
+name: dreamer
 description: "Adversarial reviewer that asks 'what if you went further?' Pushes every idea to its extreme. Use to find the ambitious edge of any work."
 ---
 
