@@ -1,10 +1,8 @@
 ---
 name: contrarian
-description: Contrarian — Invert Everything
----
-
-name: contrarian
 description: "Invert any well-established claim and generate 10 counter-hypotheses. Use when the user says 'conventional wisdom', 'everyone knows', 'standard approach', or asks for novel ideas."
+tags: [novelty, thinking, inversion]
+difficulty: intermediate
 argument-hint: "The claim or conventional wisdom to invert"
 ---
 
