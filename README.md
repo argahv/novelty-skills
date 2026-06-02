@@ -1,8 +1,17 @@
 <div align="center">
 
-# AGORA — 11 ways to see what everyone missed
+```
+╔══════════════════════════════════════════════════╗
+║                                                  ║
+║     One brain sees what it expects to see.       ║
+║                                                  ║
+║     AGORA gives you 11.                         ║
+║     Each one catches what the others miss.       ║
+║                                                  ║
+╚══════════════════════════════════════════════════╝
+```
 
-**Thinking patterns that catch each other's blind spots — for every decision, design, and disaster you'll face today.**
+**Thinking patterns that break consensus, find hidden assumptions, and stress-test your best ideas before they fail.**
 
 [![CI](https://github.com/argahv/novelty-skills/actions/workflows/ci.yml/badge.svg)](https://github.com/argahv/novelty-skills/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
@@ -10,176 +19,182 @@
 
 </div>
 
-Most bad decisions don't look bad at the time. They look like consensus. They look like "everyone knows." They look like the obvious choice that the whole team agrees on — because the whole team shares the same blind spots.
-
-AGORA breaks that reflex.
-
-It gives your AI 11 different ways to see each problem — not one. Each pattern inverts assumptions, imports solutions from distant fields, generates ideas nobody asked for, and stress-tests every output against the other 10. When they converge, you can trust it. When they fight, the tension is where breakthroughs live.
-
-Works with Claude Code, Codex, Cursor, Gemini CLI, and any AI that reads SKILL.md. Installs in 5 seconds.
-
 ```bash
-npx skills add argahv/novelty-skills
+npx skills add argahv/novelty-skills      # ← 5 seconds. Works with any AI.
+```
+
+<br>
+
+```
+┌─ Every team has blind spots ──────────────────────┐
+│                                                    │
+│  ✓ "We know this space"                            │
+│  ✓ "Industry standard approach"                    │
+│  ✓ "Everyone agrees"                               │
+│                                                    │
+│  ✗ That's where the failures live.                 │
+│    The consensus is where the overlooked           │
+│    assumption, the missing angle, the road         │
+│    not taken — all hide in plain sight.            │
+│                                                    │
+└────────────────────────────────────────────────────┘
+
+     ┌───────────────────────────────────────────┐
+     │  AGORA doesn't replace your judgment.     │
+     │  It arm-wrestles it from 11 angles until  │
+     │  only the truth survives.                 │
+     └───────────────────────────────────────────┘
 ```
 
 ---
 
-## Why you'll use this
+## The 11 patterns
 
-**The contrarian** — You know that thing "everyone knows" is true? What if it isn't? It'll flip your most settled belief and see if the inversion holds together.
+Each one is a distinct cognitive superpower. Use any one and you'll see things your peers miss. Use all 11 together and they cross-check each other into a reasoning system with no blind spot.
 
-**The assumption-excavator** — You're about to commit to something. It'll surface the 1-3 hidden assumptions that will kill you if they're wrong — and design the cheapest test for each.
-
-**The cross-pollinator** — You're stuck on a problem. It'll pull solutions from 15 fields you've never touched — how does an immunologist solve this? A military strategist? A jazz musician?
-
-**The heretic** — You need a breakthrough, not an improvement. It'll generate 50 wild hypotheses, score each one, and find the idea that's weird enough to work.
-
-**The counterfactual** — Everyone uses X. But what if X never existed? It'll find the road not taken — the approach abandoned because attention flowed elsewhere, not because it was worse.
-
-**The paradox-sifter** — Three sources say three different things. It'll cross-reference all of them and find the contradiction nobody resolved.
-
-**The theorist** — Someone claims something is "provably true." It'll check the proof for the hidden constant, the unstated assumption, the edge case that breaks everything.
-
-**The empiricist** — Someone shows you results. It'll audit the baselines, check the error bars, and ask the question nobody asked: "would this survive a different random seed?"
-
-**The skeptic** — Everything could be wrong. It'll demand the specific evidence that would prove it — and tell you what grade the current evidence earns.
-
-**The pragmatist** — Someone proposes a solution. It'll calculate the real cost — hardware, ops complexity, maintenance burden — and ask the most dangerous question: "so what?"
-
-**The dreamer** — The team stopped at "good enough." It'll push every dimension to 10× and find the one extension that would be disproportionately impactful if it worked.
+|  | Pattern | Strikes from | Use when |
+|---|---------|-------------|----------|
+| ⚡ | **contrarian** | The opposite direction | "Everyone knows X." What if that's wrong? |
+| 🕳️ | **assumption-excavator** | What nobody said aloud | Before committing to any plan. |
+| 🧬 | **cross-pollinator** | 15 distant fields | You're stuck and same-domain thinking isn't helping. |
+| 🔥 | **heretic** | Hypothesis #30+ (the breakthrough zone) | You need a breakthrough, not an improvement. |
+| ⏮️ | **counterfactual** | What if the canonical solution never existed? | "Why does everyone use X?" |
+| 🔀 | **paradox-sifter** | Contradictions across sources | Different sources say different things. |
+| 📐 | **theorist** | Formal proofs, hidden assumptions | Someone claims something is "provably true." |
+| 📊 | **empiricist** | Baselines, error bars, methodology | Someone shows you impressive results. |
+| ❓ | **skeptic** | Everything. Prove it. | You need the strongest possible challenge. |
+| 💰 | **pragmatist** | Real-world cost, "so what?" | "SOTA" at what cost? Does it matter outside the lab? |
+| 🚀 | **dreamer** | The 10× boundary | The team agreed on "good enough." |
 
 ---
 
-## The AGORA effect
+## How they merge (the AGORA effect)
 
-Use any one pattern and you'll see things your peers miss. Use all 11 together and something else happens.
+Use one pattern = you get one angle. Use all 11 = each output feeds every other, and nothing survives until it's been attacked from every side.
 
 ```
-Pass 1 — DIVERGE
-  All 6 generators fire in parallel. Each sees a different angle.
-  Assumption-Excavator finds what nobody stated.
-  Contrarian inverts what "everyone knows."
-  Heretic pushes past the first 30 safe ideas into the breakthrough zone.
-  Cross-Pollinator imports mechanisms from immunology, strategy, music.
-  Counterfactual finds the road not taken.
-  Dreamer pushes every dimension to 10×.
-
-  Each output feeds every other output.
-  Heretic's wild idea becomes Contrarian's next inversion target.
-  Cross-Pollinator's imported mechanism becomes Dreamer's pushed dimension.
-
-Pass 2 — EMERGE
-  Paradox-Sifter cross-references all 6 outputs looking for:
-  • Convergences (3+ patterns found the same thing → high confidence)
-  • Creative tensions (Dreamer says 10×, Pragmatist says "so what?" → 
-    the exact frontier of feasible ambition)
-  • Suppressed alternatives resurrected (Counterfactual + Heretic agree 
-    → might be the real breakthrough)
-
-Pass 3 — CONVERGE
-  All 5 reviewers stress-test every surviving output:
-  • Theorist: formal soundness
-  • Empiricist: what experiment confirms or falsifies this?
-  • Skeptic: what would prove this wrong?
-  • Pragmatist: does this matter in practice?
-  • Dreamer: if this works, what's next?
-
-Pass 4 — SYNTHESIS
-  A structured answer, not a single guess:
-  • The consensus view (survived all 5, high confidence)
-  • The contrarian view (might be true, everyone ignores it)
-  • The suppressed alternative (the road not taken, documented with 
-    trigger conditions for when it becomes the right choice)
-  • The haunting idea (what this should really be about)
-  • The critical assumptions (what everything rests on, cheapest 
-    way to test each)
-  • The dangerous paradox (contradiction everyone missed)
+                    ┌─────────────────────┐
+                    │    YOUR PROBLEM      │
+                    └──────────┬──────────┘
+                               │
+           ┌───────────────────┼───────────────────┐
+           │                   │                   │
+           ▼                   ▼                   ▼
+   ┌───────────────┐   ┌───────────────┐   ┌───────────────┐
+   │   DIVERGE     │──▶│   EMERGE      │──▶│   CONVERGE    │
+   │ 6 generators  │   │ paradox-sifter│   │ 5 reviewers   │
+   │ (all angles)  │   │ (find patterns)│  │ (stress-test) │
+   └───────────────┘   └───────────────┘   └───────────────┘
+           │                   │                   │
+           └───────────────────┼───────────────────┘
+                               │
+                               ▼
+                    ┌─────────────────────┐
+                    │    SYNTHESIS        │
+                    │ 7-part structured   │
+                    │ possibility space   │
+                    └─────────────────────┘
 ```
 
-**11 patterns = 55 bidirectional cross-checks + 1 paradox matrix + 1 synthesis pass.** A reasoning system with no single point of failure and no cognitive blind spot.
+**Pass 1 — DIVERGE** All 6 generators fire in parallel. Assumption-Excavator finds what nobody stated. Contrarian inverts consensus. Heretic pushes to hypothesis #37 (where breakthroughs hide). Cross-Pollinator imports from immunology, strategy, music. Counterfactual finds the road not taken. Dreamer pushes every dimension to 10×.
+
+**Each output feeds every other.** Heretic's wild idea becomes Contrarian's next inversion. Cross-Pollinator's mechanism becomes Dreamer's pushed dimension. Counterfactual's finding becomes Assumption-Excavator's new premise to check.
+
+**Pass 2 — EMERGE** Paradox-Sifter cross-references all 6 outputs for convergences (3+ patterns agreed → high confidence), creative tensions (Dreamer says 10×, Pragmatist says "so what?" → the exact ambition frontier), and suppressed alternatives resurrected (Counterfactual + Heretic agree → likely breakthrough).
+
+**Pass 3 — CONVERGE** All 5 reviewers fire on every survivor. Theorist checks formal soundness. Empiricist designs the experiment. Skeptic demands what would prove it wrong. Pragmatist calculates real cost. Dreamer asks what's next.
+
+**Pass 4 — SYNTHESIS** Output: a 7-part possibility space, not a single guess. Consensus view. Contrarian view. Suppressed alternative. Haunting idea. Crazy next step. Critical assumptions. Dangerous paradox. Each with calibrated confidence.
+
+```
+11 patterns = 55 bidirectional cross-checks + 1 paradox matrix
+          = a reasoning system with no single point of failure
+```
 
 ---
 
-## Where it hits hardest
+## Where it hits
 
-### Post-mortems that find root causes, not symptoms
+<br>
 
-**Without AGORA:** "The DB connection pool ran out." Fix: increase pool size. Repeat next month.
+```
+  Post-mortem                 ❌ "The DB pool ran out" → increase pool → repeat next month
+                              ✅ assumption-excavator: pool limit was symptom, not cause
+                                 cross-pollinator: retry storms = disease outbreaks
+                                 → circuit breaker + exponential backoff
+                                 → root cause found in minutes
 
-**With AGORA:** The assumption-excavator catches that the pool limit was a symptom. The cross-pollinator imports contact tracing from epidemiology — connection spikes follow disease outbreak patterns. The heretic generates "Hypothesis #31: the outage was a monitoring artifact." Result: you fix the actual root cause (retry storm with no circuit breaker) instead of treating the symptom.
+  Architecture decision      ❌ "We chose Kafka for scalability" → nobody knows why
+                              ✅ counterfactual: without Kafka, you'd use SQS + partitioning
+                                 pragmatist: ops cost vs actual throughput
+                                 → decision tree with explicit thresholds
+                                 → the road not taken, with trigger conditions
 
-### Architecture decisions that don't age into regrets
+  Startup strategy           ❌ Build what you believe → ~90% fail
+                              ✅ assumption-excavator: "enterprises can't buy without VP approval"
+                                 heretic: "sell to security teams, not engineering"
+                                 pragmatist: price by fix count, not seat
+                                 → real buyer identified before writing code
 
-**Without AGORA:** "We chose Kafka because scalability." Six months later, nobody remembers why. You're paying for a distributed system on a 3-node cluster.
+  Acquisition due diligence  ❌ "Code looks clean, team seems solid" → overpay
+                              ✅ paradox-sifter: claimed CPU-only, earlier paper used GPU
+                                 empiricist: benchmark data was synthetic
+                                 → negotiate 40% off, acquire dataset (not model)
 
-**With AGORA:** The counterfactual removes Kafka's canonical papers from history — you'd use SQS + partitioning. The pragmatist calculates ops cost against your actual throughput. The result isn't "Kafka is wrong" — it's a decision tree with explicit thresholds: "Kafka now, revisit at 20 engineers. If latency <10ms matters, lean SQS." The road not taken is documented with the conditions that make it the right choice.
+  Security audit             ❌ CVE scanner finds known patterns → novel vulns stay hidden
+                              ✅ counterfactual: without JWT, you'd use session cookies
+                                 heretic #37: "JWT library accepts 'none' algorithm"
+                                 → zero-day found before any attacker
+```
 
-### Startups that don't build things nobody wants
+<br>
 
-**Without AGORA:** Founders build what they believe. Investors fund what they believe. ~90% fail.
-
-**With AGORA:** The assumption-excavator surfaces "you assume engineering teams can buy tools without security review." They can't — 70% of enterprises require VP approval. The heretic finds the pivot before you write code: "sell to security teams, not engineering." The pragmatist prices by fix count, not seat. Result: you identify the real buyer and price correctly before building.
-
-### Acquisitions where you don't overpay for hype
-
-**Without AGORA:** "Codebase looks clean. Team seems solid." — said before every failed acquisition.
-
-**With AGORA:** The paradox-sifter cross-references the target's claims against their own earlier work — finds a contradiction (claimed CPU-only, earlier paper used GPU clusters). The empiricist audits their benchmarks (synthetic data, not real distributions). You negotiate 40% off and acquire the dataset (valuable) while replacing the model (broken).
-
-### Security audits that find zero-days, not known CVEs
-
-**Without AGORA:** CVE scanner checks known patterns. Novel vulns stay hidden until exploited.
-
-**With AGORA:** The counterfactual removes JWT as the canonical auth solution — you'd use HTTP-only session cookies with a smaller attack surface. The heretic generates "Hypothesis #37: the JWT library accepts 'none' algorithm from a version mismatch." The cross-pollinator imports immunology's autoimmune model: one service impersonating another via shared JWT trust. Zero-days found before any attacker.
+```
+  ┌────────────────────────────────────────────────────────────┐
+  │  The pattern: AGORA doesn't just answer your question.     │
+  │  It shows you the question you SHOULD have asked.          │
+  └────────────────────────────────────────────────────────────┘
+```
 
 ---
 
 ## Install
 
 ```bash
-# Install all patterns — browse and select interactively
+# Everything — browse and select interactively
 npx skills add argahv/novelty-skills
 
-# Install a specific pattern
+# Just one
 npx skills add argahv/novelty-skills --skill contrarian
 
-# Install globally (available across all projects)
+# Global (available across all projects)
 npx skills add argahv/novelty-skills -g -y -s '*'
 ```
 
-Or clone manually:
+Or clone:
 
 ```bash
 git clone https://github.com/argahv/novelty-skills ~/.claude/skills/novelty-skills
 ```
 
-Then use any pattern as a slash command:
+Then use any pattern:
 
 ```
 /contrarian "Claim: Microservices improve velocity"
 /assumption-excavator "Plan: Launch in 6 weeks"
 /cross-pollinator "Stuck on cache invalidation"
-/heretic "Paper: Attention is All You Need"
 ```
 
-Or run all 11 in parallel for the full AGORA treatment. See [AGENTS.md](AGENTS.md) for the execution loop.
+Run all 11 in parallel for the full AGORA treatment ([AGENTS.md](AGENTS.md)).
 
 ---
 
-## Why this exists
+## Why
 
-Most agent skills teach process — how to deploy, how to test, how to review. These teach thinking — how to see what everyone else missed, challenge what everyone else accepts, and find the breakthrough that everyone else walked past.
+Most agent skills teach process (how to deploy, test, review). These teach thinking — how to see what everyone else missed, challenge what everyone else accepts, and find the breakthrough everyone else walked past.
 
 Part of the [Sisyphus Academica](https://github.com/argahv/sisyphus-academica) project.
 
----
+New pattern that survives the existing 11? [Contribute it.](CONTRIBUTING.md) If it finds something the others miss, it belongs here.
 
-## Contributing
-
-See [CONTRIBUTING.md](CONTRIBUTING.md). New thinking patterns that survive the existing 11 are always welcome — that's how AGORA evolves. If your pattern finds something the others miss, it belongs here.
-
----
-
-## License
-
-MIT — see [LICENSE](LICENSE).
+MIT license.
