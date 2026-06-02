@@ -204,4 +204,8 @@ Part of the [Sisyphus Academica](https://github.com/argahv/sisyphus-academica) p
 
 New pattern that survives the existing 11? [Contribute it.](CONTRIBUTING.md) If it finds something the others miss, it belongs here.
 
+---
+
+**Topics:** `ai-agents` `thinking` `cognitive-diversity` `creativity` `problem-solving` `agent-skills` `novelty` `claude-code` `codex` `cursor` `adversarial-reasoning`
+
 MIT license.

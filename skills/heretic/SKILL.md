@@ -1,6 +1,6 @@
 ---
 name: heretic
-description: "Generate 50 wild hypotheses from a title + abstract alone, score each against the actual paper, and find the 'haunting idea' — what the paper SHOULD have been. Use when reviewing research, brainstorming, or breaking out of consensus thinking."
+description: "Generate 50 wild hypotheses for any problem. The first 30 are safe. Hypotheses 31-50 are where breakthroughs hide. Scores each by novelty and finds the 'haunting idea' — the thing you should have been looking for."
 tags: [novelty, thinking, breakthrough]
 difficulty: advanced
 argument-hint: "Paper title / abstract / claim to challenge"

@@ -1,8 +1,9 @@
 ---
 name: theorist
-description: "Adversarial reviewer that attacks formal proofs, mathematical rigor, and theoretical foundations. Use to stress-test any paper or proposal."
+description: "Attack any claim of formal guarantees. Finds hidden constants, unstated assumptions, and edge cases that break the proof. Use when someone says 'provably true' or 'mathematically guaranteed.'"
 tags: [reviewer, rigor, mathematics]
 difficulty: advanced
+argument-hint: "A claim with formal guarantees, proofs, or mathematical assertions"
 ---
 
 # Theorist — "Where's the formal proof?"

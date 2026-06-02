@@ -3,6 +3,7 @@ name: dreamer
 description: "Adversarial reviewer that asks 'what if you went further?' Pushes every idea to its extreme. Use to find the ambitious edge of any work."
 tags: [reviewer, ambition, creativity]
 difficulty: intermediate
+argument-hint: "A design, paper, plan, or result that stopped too early"
 ---
 
 # Dreamer — "You stopped too early"

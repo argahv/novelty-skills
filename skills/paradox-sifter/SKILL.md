@@ -1,6 +1,6 @@
 ---
 name: paradox-sifter
-description: "Cross-reference every 'Limitations' section across papers on the same topic to find contradictions and ignored tensions. Use when doing literature review, identifying research gaps, or writing a paper."
+description: "Cross-reference every source on the same topic to find contradictions everyone ignored. Use when different sources say different things, or when you need to find blind spots in a set of claims."
 tags: [novelty, thinking, literature-review]
 difficulty: advanced
 argument-hint: "Topic or set of papers to analyze"

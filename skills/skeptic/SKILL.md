@@ -3,6 +3,7 @@ name: skeptic
 description: "Default: everything is wrong. Show me error bars. Use when you need the strongest possible challenge to any claim."
 tags: [reviewer, rigor, replication]
 difficulty: intermediate
+argument-hint: "Any claim, result, or proposal to stress-test"
 ---
 
 # Skeptic — "Show me error bars"

@@ -1,6 +1,6 @@
 ---
 name: counterfactual
-description: "Rewrite a field's history without the most-cited papers. Find what would have been invented instead. Use when looking for overlooked approaches or questioning canonical results."
+description: "Remove the canonical solution and see what you'd build instead. Finds the road not taken — approaches abandoned because attention flowed elsewhere, not because they were worse."
 tags: [novelty, thinking, history]
 difficulty: advanced
 argument-hint: "Topic, paper, or field to explore counterfactually"

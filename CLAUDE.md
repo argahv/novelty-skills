@@ -1,11 +1,12 @@
 # PRISM / Novelty Skills — CLAUDE.md
 
-You are editing the PRISM cognition engine repository. Each skill lives in `skills/<name>/SKILL.md`. The PRISM architecture fuses all 11 patterns into one adversarial reasoning system.
+You are editing the PRISM cognition engine repository. Each skill lives in `skills/<name>/SKILL.md`. The PRISM architecture fuses all 11 patterns into one adversarial reasoning system, orchestrated by `skills/prism/SKILL.md`.
 
 ## Structure
 
 - `skills/<name>/SKILL.md` — Each skill is its own directory with a SKILL.md file
-- `README.md` — Full vision document: 11 skills + PRISM merged architecture + real-world use cases
+- `skills/prism/SKILL.md` — The PRISM orchestrator (4-phase pipeline execution protocol)
+- `README.md` — Landing page: 12 skills + PRISM merged architecture + use cases
 - `AGENTS.md` — Agent onboarding with PRISM execution instructions
 - `CONTRIBUTING.md` — Guide for adding new skills
 - `CHANGELOG.md` — Version history
@@ -13,7 +14,7 @@ You are editing the PRISM cognition engine repository. Each skill lives in `skil
 
 ## Key Rules
 
-- Skills must have `name`, `description`, `tags`, and `difficulty` in YAML frontmatter
+- Skills must have `name`, `description`, `tags`, `difficulty`, and `argument-hint` in YAML frontmatter
 - Keep each skill focused on one thinking pattern
 - No code, no dependencies — pure markdown instructions
 - Every skill must include:
@@ -21,6 +22,7 @@ You are editing the PRISM cognition engine repository. Each skill lives in `skil
   - Example Output (realistic I/O)
   - Anti-Patterns (≥3 entries)
   - Trigger Conditions (recommended)
+  - PRISM Integration section (required) — structured output format + cross-pattern dependencies
 - Validate YAML frontmatter before committing
 - Update README.md skill table when adding or modifying a skill
-- New skills should document how they integrate into the PRISM merged execution flow
+- New skills should document their PRISM Integration (output format, consumed by, consumes from)

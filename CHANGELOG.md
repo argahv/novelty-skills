@@ -6,27 +6,20 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
-- **PRISM architecture**: Merged cognition engine that fuses all 11 patterns into one adversarial reasoning system with 4 phases (DIVERGE → EMERGE → CONVERGE → SYNTHESIZE)
-- **8 real-world use cases**:
-  - Post-Mortem / Incident Analysis
-  - Architecture Decision Records (ADRs)
-  - Startup / Product Strategy
-  - Technical Due Diligence
-  - Security Vulnerability Discovery
-  - Research Paper / PhD Dissertation
-  - Incident Command / Crisis Response
-  - Personal / Career Decisions
-- **Cross-feeding mechanism**: Each pattern's output becomes input for every other pattern in pass 2
-- **Calibrated confidence system**: Outputs are structured as a possibility space with per-claim confidence (HIGH / MEDIUM / LOW / exploration signal)
-- **Anti-fragile blind spot detection**: The merged system catches its own individual pattern blind spots through cross-referencing
-- Agent integration guide: individual skill usage + merged PRISM execution loop + pipeline examples
+- **PRISM architecture**: Merged cognition engine that fuses all 11 patterns into one adversarial reasoning system with 4 phases (DIVERGE → EMERGE → CONVERGE → SYNTHESIS)
+- **PRISM orchestrator skill** (`skills/prism/SKILL.md`): Full pipeline specification with structured YAML output templates, confidence calibration rules, and 7-part synthesis format
+- **PRISM Integration sections** in all 11 skills: standardized output schemas, finding type taxonomy, cross-pattern dependency declarations
+- **Cross-feed mechanism**: Each pattern's output has a defined format that other patterns can consume (consumed_by / consumes_from)
+- **Calibrated confidence system**: 4-tier (HIGH / MEDIUM / LOW / EXPLORATION) with exact promotion rules based on cross-pattern convergence
+- **AGENTS.md rewritten**: From 4-line handwave to full execution protocol with all 4 phases, dependency graph, and confidence calibration table
+- **README rebrand**: Visual overhaul with box-drawing hero, compact skill grid, pipeline diagram, diff-format use cases
 
 ### Changed
 
-- **Rebrand**: "Novelty Skills" is now **PRISM — 11 ways to see what everyone missed**
-- README expanded from 98 lines to full vision document with architecture diagram, phase descriptions, and use cases
-- AGENTS.md updated with PRISM merged execution instructions
-- CLAUDE.md updated with new scope and contribution guidelines
+- **Rebrand**: Renamed from AGORA to PRISM across all documentation
+- All 5 reviewer persona descriptions rewritten to be decision-focused, not academic
+- All 5 reviewer personas now have `argument-hint` in YAML frontmatter for consistency
+- `counterfactual`, `paradox-sifter`, `heretic`, `theorist`, `empiricist` descriptions updated for broader applicability
 
 ## [1.0.0] — 2026-06-01
 
