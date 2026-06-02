@@ -11,7 +11,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Verify skills
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Verify all skills have SKILL.md
         run: |
           for d in skills/*/; do
             name=$(basename "$d")
@@ -19,3 +22,77 @@ jobs:
             echo "  ✓ $name"
           done
           echo "All $(ls -d skills/*/ | wc -l) skills verified."
+      - name: Validate YAML frontmatter
+        run: |
+          python3 -c "
+import os, yaml, sys
+
+errors = []
+for d in sorted(os.listdir('skills')):
+    skill_dir = os.path.join('skills', d)
+    skill_file = os.path.join(skill_dir, 'SKILL.md')
+    if not os.path.isfile(skill_file):
+        continue
+    with open(skill_file) as f:
+        content = f.read()
+
+    # Parse YAML frontmatter
+    if not content.startswith('---'):
+        errors.append(f'{skill_file}: missing YAML frontmatter')
+        continue
+    parts = content.split('---', 2)
+    if len(parts) < 3:
+        errors.append(f'{skill_file}: malformed YAML frontmatter')
+        continue
+
+    try:
+        meta = yaml.safe_load(parts[1])
+    except yaml.YAMLError as e:
+        errors.append(f'{skill_file}: YAML parse error: {e}')
+        continue
+
+    if not isinstance(meta, dict):
+        errors.append(f'{skill_file}: frontmatter is not a dict')
+        continue
+
+    # Check required fields
+    for field in ['name', 'description']:
+        if field not in meta:
+            errors.append(f'{skill_file}: missing required field: {field}')
+
+    # Check recommended fields
+    for field in ['tags', 'difficulty']:
+        if field not in meta:
+            errors.append(f'{skill_file}: missing recommended field: {field}')
+
+    if errors:
+        break
+
+if errors:
+    for e in errors:
+        print(f'  ❌ {e}', file=sys.stderr)
+    sys.exit(1)
+else:
+    print(f'  ✓ All {len([d for d in os.listdir(\"skills\") if os.path.isdir(os.path.join(\"skills\", d))])} skills have valid frontmatter')
+"
+      - name: Check README has all skills
+        run: |
+          python3 -c "
+import os
+
+skills = sorted([d for d in os.listdir('skills') if os.path.isdir(os.path.join('skills', d))])
+with open('README.md') as f:
+    readme = f.read()
+
+missing = []
+for s in skills:
+    if s not in readme.lower():
+        missing.append(s)
+
+if missing:
+    print(f'Skills not documented in README.md: {missing}')
+    print('Add them to the skill tables in README.md')
+    exit(1)
+else:
+    print(f'  ✓ All {len(skills)} skills documented in README.md')
+"

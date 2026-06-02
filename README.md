@@ -2,7 +2,7 @@
 
 # Novelty Skills — Thinking Tools for AI Agents
 
-**6 thinking patterns your agent is missing. Generate ideas no engineer would think of.**
+**11 thinking patterns your agent is missing. Generate ideas no engineer would think of.**
 
 [![CI](https://github.com/argahv/novelty-skills/actions/workflows/ci.yml/badge.svg)](https://github.com/argahv/novelty-skills/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
@@ -39,20 +39,26 @@ git clone https://github.com/argahv/novelty-skills ~/.claude/skills/novelty-skil
 
 ## The Skills
 
+### Novelty Engines — Generate Ideas No One Has Had
+
 | Skill | What it does | Use when |
 |-------|-------------|----------|
 | **contrarian** | Inverts every well-established claim in a field. Generates 10 counter-hypotheses. | "Everyone knows X is true." What if it isn't? |
 | **cross-pollinator** | Imports solutions from 15 distant fields (astrodynamics → biology, monetary policy → ML). | You're stuck in domain-specific thinking. |
 | **assumption-excavator** | Finds unstated assumptions and tests what breaks if they're false. | "We assume X." Did you check? |
-| **paradox-sifter** | Cross-references every "Limitations" section to find ignored contradictions. | Multiple papers say different things. Who's right? |
+| **paradox-sifter** | Cross-references every "Limitations" section across papers on the same topic. | Multiple papers say different things. Who's right? |
 | **heretic** | Generates 50 wild hypotheses from title+abstract alone. Scores each against reality. | You need a breakthrough, not an improvement. |
 | **counterfactual** | Rewrites a field's history without the most-cited papers. | You need to find the road not taken. |
 
----
+### Reviewer Personas — Stress-Test Any Idea
 
-## Bonus: Reviewer Personas
-
-5 adversarial reviewer personas in `skills/theorist/`, `skills/empiricist/`, `skills/skeptic/`, `skills/pragmatist/`, `skills/dreamer/` — critique any plan or design from different angles.
+| Skill | What it does | Use when |
+|-------|-------------|----------|
+| **theorist** | Attacks formal proofs, mathematical rigor, and theoretical foundations. | Before submitting any paper or proposal. |
+| **empiricist** | Attacks experimental design, baselines, and statistical methodology. | Before submitting any empirical paper. |
+| **skeptic** | Default: everything is wrong. Demands independently replicated results. | You need the strongest possible challenge. |
+| **pragmatist** | Focuses on practical applicability, cost, and real-world constraints. | Evaluating whether something works outside the lab. |
+| **dreamer** | Asks "what if you went further?" Pushes every idea to its extreme. | Finding the ambitious edge of any work. |
 
 ---
 
@@ -81,6 +87,12 @@ Part of the [Sisyphus Academica](https://github.com/argahv/sisyphus-academica) r
 
 ---
 
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for how to add a new skill, report a bug, or suggest an improvement.
+
+---
+
 ## License
 
-MIT
+MIT — see [LICENSE](LICENSE).
