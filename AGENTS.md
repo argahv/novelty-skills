@@ -1,6 +1,6 @@
-# AGORA — Merged Cognition Engine
+# PRISM — Merged Cognition Engine
 
-11 thinking patterns + the AGORA architecture that fuses them into one adversarial reasoning system. Works with any agent that reads SKILL.md.
+11 thinking patterns + the PRISM architecture that fuses them into one adversarial reasoning system. Works with any agent that reads SKILL.md.
 
 ## Quick Install
 
@@ -25,7 +25,7 @@ skills/
 └── dreamer/               # Reviewer: push further
 ```
 
-## AGORA — Merged Execution
+## PRISM — Merged Execution
 
 For complete cognition, run all 11 as parallel subagents:
 

@@ -1,6 +1,6 @@
-# Contributing to AGORA / Novelty Skills
+# Contributing to PRISM / Novelty Skills
 
-Thanks for your interest! This project grows through contributions of new thinking patterns, improvements to existing skills, AGORA integration patterns, and bug reports.
+Thanks for your interest! This project grows through contributions of new thinking patterns, improvements to existing skills, PRISM integration patterns, and bug reports.
 
 ---
 
@@ -22,7 +22,7 @@ Thanks for your interest! This project grows through contributions of new thinki
    - A `## Example Output` section showing realistic I/O
    - An `## Anti-Patterns` table showing common mistakes
    - `## Trigger Conditions` (recommended) for automatic invocation
-   - `## AGORA Integration` (recommended) — how this skill feeds into and benefits from the merged architecture
+   - `## PRISM Integration` (recommended) — how this skill feeds into and benefits from the merged architecture
 
 3. **Update the README** with the new skill added to the appropriate table. If your skill is a new pattern type (not fitting a novelty engine or reviewer persona), add a new table.
 
@@ -30,16 +30,16 @@ Thanks for your interest! This project grows through contributions of new thinki
 
 ---
 
-## How to Contribute AGORA Integration Patterns
+## How to Contribute PRISM Integration Patterns
 
-Beyond individual skills, AGORA thrives on **cross-pattern workflows**. Contributions in this category:
+Beyond individual skills, PRISM thrives on **cross-pattern workflows**. Contributions in this category:
 
 - **Pipeline recipes**: Document a multi-skill chain for a specific use case (e.g., "post-mortem pipeline: assumption-excavator → contrarían → cross-pollinator → dreamer → pragmatist → synthesis")
 - **Cross-feed protocols**: How to structure the pass-2 revision step where each pattern sees all other outputs
 - **Weighting schemes**: How to calibrate confidence when patterns converge vs contradict
 - **Synthesis templates**: Structured output formats for the possibility space
 
-Add these to a new `docs/` directory or as a section in an existing skill's AGORA Integration section.
+Add these to a new `docs/` directory or as a section in an existing skill's PRISM Integration section.
 
 ---
 
@@ -52,7 +52,7 @@ Add these to a new `docs/` directory or as a section in an existing skill's AGOR
 | Example Output | ✅ Yes | Realistic I/O, not placeholder |
 | Anti-Patterns | ✅ Yes | ≥3 entries |
 | Trigger Conditions | ⬜ Recommended | List of patterns/phrases |
-| AGORA Integration | ⬜ Recommended | How it feeds the merged architecture |
+| PRISM Integration | ⬜ Recommended | How it feeds the merged architecture |
 
 ---
 
@@ -60,8 +60,8 @@ Add these to a new `docs/` directory or as a section in an existing skill's AGOR
 
 - **Bug**: A skill produces wrong or misleading output. Include the input and actual output.
 - **Enhancement**: A skill could be improved. Describe what's missing.
-- **New skill idea**: Suggest a thinking pattern not yet covered. Bonus points if you describe how it interacts with existing skills in the AGORA architecture.
-- **AGORA workflow bug**: When two patterns produce contradictory outputs and the synthesis fails to resolve them — this is a feature, not a bug, but the resolution protocol may need improvement.
+- **New skill idea**: Suggest a thinking pattern not yet covered. Bonus points if you describe how it interacts with existing skills in the PRISM architecture.
+- **PRISM workflow bug**: When two patterns produce contradictory outputs and the synthesis fails to resolve them — this is a feature, not a bug, but the resolution protocol may need improvement.
 
 ---
 
@@ -76,4 +76,4 @@ Add these to a new `docs/` directory or as a section in an existing skill's AGOR
 
 ## Code of Conduct
 
-Be respectful. This project spans many fields and backgrounds. Assume good intent. No gatekeeping. Every new thinking pattern makes AGORA stronger — even the ones that seem wrong at first. (The Contrarian will test them.)
+Be respectful. This project spans many fields and backgrounds. Assume good intent. No gatekeeping. Every new thinking pattern makes PRISM stronger — even the ones that seem wrong at first. (The Contrarian will test them.)

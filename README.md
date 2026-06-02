@@ -5,7 +5,7 @@
 ║                                                  ║
 ║     One brain sees what it expects to see.       ║
 ║                                                  ║
-║     AGORA gives you 11.                         ║
+║     PRISM gives you 11.                         ║
 ║     Each one catches what the others miss.       ║
 ║                                                  ║
 ╚══════════════════════════════════════════════════╝
@@ -40,7 +40,7 @@ npx skills add argahv/novelty-skills      # ← 5 seconds. Works with any AI.
 └────────────────────────────────────────────────────┘
 
      ┌───────────────────────────────────────────┐
-     │  AGORA doesn't replace your judgment.     │
+      │  PRISM doesn't replace your judgment.     │
      │  It arm-wrestles it from 11 angles until  │
      │  only the truth survives.                 │
      └───────────────────────────────────────────┘
@@ -68,7 +68,7 @@ Each one is a distinct cognitive superpower. Use any one and you'll see things y
 
 ---
 
-## How they merge (the AGORA effect)
+## How they merge (the PRISM effect)
 
 Use one pattern = you get one angle. Use all 11 = each output feeds every other, and nothing survives until it's been attacked from every side.
 
@@ -151,7 +151,7 @@ Use one pattern = you get one angle. Use all 11 = each output feeds every other,
 
 ```
   ┌────────────────────────────────────────────────────────────┐
-  │  The pattern: AGORA doesn't just answer your question.     │
+  │  The pattern: PRISM doesn't just answer your question.     │
   │  It shows you the question you SHOULD have asked.          │
   └────────────────────────────────────────────────────────────┘
 ```
@@ -185,7 +185,7 @@ Then use any pattern:
 /cross-pollinator "Stuck on cache invalidation"
 ```
 
-Run all 11 in parallel for the full AGORA treatment ([AGENTS.md](AGENTS.md)).
+Run all 11 in parallel for the full PRISM treatment ([AGENTS.md](AGENTS.md)).
 
 ---
 

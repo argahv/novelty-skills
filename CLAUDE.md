@@ -1,12 +1,12 @@
-# AGORA / Novelty Skills — CLAUDE.md
+# PRISM / Novelty Skills — CLAUDE.md
 
-You are editing the AGORA cognition engine repository. Each skill lives in `skills/<name>/SKILL.md`. The AGORA architecture fuses all 11 patterns into one adversarial reasoning system.
+You are editing the PRISM cognition engine repository. Each skill lives in `skills/<name>/SKILL.md`. The PRISM architecture fuses all 11 patterns into one adversarial reasoning system.
 
 ## Structure
 
 - `skills/<name>/SKILL.md` — Each skill is its own directory with a SKILL.md file
-- `README.md` — Full vision document: 11 skills + AGORA merged architecture + 8 real-world use cases
-- `AGENTS.md` — Agent onboarding with AGORA execution instructions
+- `README.md` — Full vision document: 11 skills + PRISM merged architecture + real-world use cases
+- `AGENTS.md` — Agent onboarding with PRISM execution instructions
 - `CONTRIBUTING.md` — Guide for adding new skills
 - `CHANGELOG.md` — Version history
 - `.github/ISSUE_TEMPLATE/` — Issue templates for bug reports and feature requests
@@ -23,4 +23,4 @@ You are editing the AGORA cognition engine repository. Each skill lives in `skil
   - Trigger Conditions (recommended)
 - Validate YAML frontmatter before committing
 - Update README.md skill table when adding or modifying a skill
-- New skills should document how they integrate into the AGORA merged execution flow
+- New skills should document how they integrate into the PRISM merged execution flow

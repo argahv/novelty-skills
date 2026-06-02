@@ -6,7 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
-- **AGORA architecture**: Merged cognition engine that fuses all 11 patterns into one adversarial reasoning system with 4 phases (DIVERGE → EMERGE → CONVERGE → SYNTHESIZE)
+- **PRISM architecture**: Merged cognition engine that fuses all 11 patterns into one adversarial reasoning system with 4 phases (DIVERGE → EMERGE → CONVERGE → SYNTHESIZE)
 - **8 real-world use cases**:
   - Post-Mortem / Incident Analysis
   - Architecture Decision Records (ADRs)
@@ -19,13 +19,13 @@ All notable changes to this project will be documented in this file.
 - **Cross-feeding mechanism**: Each pattern's output becomes input for every other pattern in pass 2
 - **Calibrated confidence system**: Outputs are structured as a possibility space with per-claim confidence (HIGH / MEDIUM / LOW / exploration signal)
 - **Anti-fragile blind spot detection**: The merged system catches its own individual pattern blind spots through cross-referencing
-- Agent integration guide: individual skill usage + merged AGORA execution loop + pipeline examples
+- Agent integration guide: individual skill usage + merged PRISM execution loop + pipeline examples
 
 ### Changed
 
-- **Rebrand**: "Novelty Skills" is now **AGORA — The Merged Cognition Engine**
+- **Rebrand**: "Novelty Skills" is now **PRISM — 11 ways to see what everyone missed**
 - README expanded from 98 lines to full vision document with architecture diagram, phase descriptions, and use cases
-- AGENTS.md updated with AGORA merged execution instructions
+- AGENTS.md updated with PRISM merged execution instructions
 - CLAUDE.md updated with new scope and contribution guidelines
 
 ## [1.0.0] — 2026-06-01
