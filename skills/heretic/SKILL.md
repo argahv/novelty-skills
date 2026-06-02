@@ -77,6 +77,33 @@ Describe the **minimum experiment** that could distinguish the haunting idea fro
 | Ignoring the haunting idea | It's uncomfortable | Flag it explicitly. That discomfort is value. |
 | Stopping at critique | "This paper is wrong" | Ask "what should they have done instead?" |
 
+## PRISM Integration
+
+In PRISM mode, output findings as structured YAML:
+
+```yaml
+pattern: heretic
+input: "<original claim>"
+findings:
+  - claim: "<hypothesis>"
+    type: hypothesis
+    tier: <"direct_extension" | "method_substitution" | "goal_inversion" | "hidden_variable" | "paradigm_shift">
+    hypothesis_number: <1-50>
+    plausibility: <1-10>
+    novelty: <1-10>
+    evidence_gap: <1-10>
+    confidence: <HIGH | MEDIUM | LOW | EXPLORATION>
+haunting_idea:
+  claim: "<highest novelty × evidence gap finding>"
+  novelty_x_evidence_gap: <score>
+  minimum_experiment: "<how to test>"
+```
+
+**Consumed by:** empiricist (design experiments for top hypotheses), paradox-sifter (cross-reference wild ideas against other findings)
+**Consumes from:** all other generators (to seed hypothesis generation)
+
+---
+
 ## Trigger Conditions
 
 Use this skill when:

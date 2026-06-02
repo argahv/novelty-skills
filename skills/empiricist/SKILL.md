@@ -86,6 +86,29 @@ Could you replicate these results with:
 | Ignoring practical significance | "p=0.049 is barely significant" | This is valid — but pair it with effect size, not just p |
 | Accepting author's framing | "They say it's SOTA so it must be" | Verify every baseline yourself |
 
+## PRISM Integration
+
+In PRISM mode, consume findings from generators and produce experimental designs:
+
+```yaml
+pattern: empiricist
+input: "<findings from generators>"
+findings:
+  - claim: "<experiment design>"
+    type: empirical_gap
+    targets_finding: "<which finding from which generator>"
+    experiment_design: "<specific test>"
+    success_criterion: "<what would confirm>"
+    failure_criterion: "<what would falsify>"
+    effort: "<low | medium | high>"
+    confidence: <HIGH | MEDIUM | LOW | EXPLORATION>
+```
+
+**Consumed by:** synthesis (experiment designs feed into recommendation and critical_assumptions)
+**Consumes from:** heretic (top hypotheses need testing), contrarian (inversions need empirical validation)
+
+---
+
 ## Trigger Conditions
 
 Use this skill when:

@@ -104,6 +104,30 @@ Rate each imported solution on:
 | Forcing the fit | Finding ANY connection | Some fields won't have useful solutions. Skip them. |
 | Vague mapping | "Be more adaptive" | Specify exact mechanism and implementation |
 
+## PRISM Integration
+
+In PRISM mode, output findings as structured YAML:
+
+```yaml
+pattern: cross-pollinator
+input: "<original problem>"
+findings:
+  - claim: "<imported solution>"
+    type: mechanism
+    source_field: "<distant field>"
+    mechanism: "<specific mechanism, not metaphor>"
+    application: "<concrete mapping to original problem>"
+    novelty: <1-10>
+    feasibility: <1-10>
+    impact: <1-10>
+    confidence: <HIGH | MEDIUM | LOW | EXPLORATION>
+```
+
+**Consumed by:** dreamer (push mechanisms to 10×), pragmatist (implementation cost and feasibility)
+**Consumes from:** (raw problem only)
+
+---
+
 ## Trigger Conditions
 
 Use this skill automatically when:

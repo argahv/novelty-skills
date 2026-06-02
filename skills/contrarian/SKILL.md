@@ -106,6 +106,28 @@ For the top counter-hypothesis, describe the cheapest experiment that could dist
 | Only inverting polarity | Misses most of the space | Use all 6 inversion axes |
 | Rating only by likelihood | Misses high-impact low-probability ideas | Rate surprise, plausibility, and impact independently |
 
+## PRISM Integration
+
+In PRISM mode, output findings as structured YAML:
+
+```yaml
+pattern: contrarian
+input: "<original claim>"
+findings:
+  - claim: "<inverted claim>"
+    type: inversion
+    inversion_axis: <polarity | direction | scope | relevance | existence | priority>
+    surprise: <1-10>
+    plausibility: <1-10>
+    impact: <1-10>
+    confidence: <HIGH | MEDIUM | LOW | EXPLORATION>
+```
+
+**Consumed by:** paradox-sifter (cross-reference inversions against other findings), skeptic (challenge each inversion)
+**Consumes from:** assumption-excavator (invert their critical assumptions)
+
+---
+
 ## Trigger Conditions
 
 Use this skill automatically when the user says:

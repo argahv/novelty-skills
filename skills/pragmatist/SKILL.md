@@ -84,6 +84,28 @@ The most practical baseline is usually not the SOTA paper — it's the simple he
 | Only looking at cost | "Too expensive" without considering value | Cost is only meaningful relative to the value delivered |
 | Missing the long game | "Nobody uses this now" | Some ideas are before their time — note the gap, don't dismiss |
 
+## PRISM Integration
+
+In PRISM mode, consume generator findings and produce cost assessments:
+
+```yaml
+pattern: pragmatist
+input: "<findings from generators>"
+findings:
+  - claim: "<cost assessment>"
+    type: cost
+    targets_finding: "<which finding>"
+    real_cost: "<hardware, ops, engineering complexity>"
+    so_what_verdict: <"ship_it" | "prototype" | "lab_curiosity" | "never_deploy">
+    simplest_baseline: "<comparison to simplest alternative>"
+    confidence: <HIGH | MEDIUM | LOW | EXPLORATION>
+```
+
+**Consumed by:** synthesis (cost assessments feed into recommendation and crazy_next_step feasibility)
+**Consumes from:** cross-pollinator (imported mechanisms), dreamer (10× pushes), contrarian (inversion practicality)
+
+---
+
 ## Trigger Conditions
 
 Use this skill when:

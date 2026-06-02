@@ -54,6 +54,7 @@ Each one is a distinct cognitive superpower. Use any one and you'll see things y
 
 |  | Pattern | Strikes from | Use when |
 |---|---------|-------------|----------|
+| 🔮 | **prism** (orchestrator) | All 11 patterns at once | "Give me the full PRISM treatment" |
 | ⚡ | **contrarian** | The opposite direction | "Everyone knows X." What if that's wrong? |
 | 🕳️ | **assumption-excavator** | What nobody said aloud | Before committing to any plan. |
 | 🧬 | **cross-pollinator** | 15 distant fields | You're stuck and same-domain thinking isn't helping. |
@@ -185,7 +186,13 @@ Then use any pattern:
 /cross-pollinator "Stuck on cache invalidation"
 ```
 
-Run all 11 in parallel for the full PRISM treatment ([AGENTS.md](AGENTS.md)).
+For the full PRISM pipeline (all 11 patterns orchestrated into the 4-phase synthesis):
+
+```
+/prism "Should we adopt microservices for a 5-person startup?"
+```
+
+See [AGENTS.md](AGENTS.md) for the complete execution protocol.
 
 ---
 

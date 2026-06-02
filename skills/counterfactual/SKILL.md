@@ -78,6 +78,28 @@ The most valuable output: an approach that was **actively suppressed** by the su
 | Wishful thinking | "Without paper X, my favorite approach would have won" | Be honest about why the canonical paper won |
 | Not considering timing | Later papers depend on earlier ones | Remove the paper and trace forward, not backward |
 
+## PRISM Integration
+
+In PRISM mode, output findings as structured YAML:
+
+```yaml
+pattern: counterfactual
+input: "<topic or claim>"
+findings:
+  - claim: "<suppressed alternative>"
+    type: alternative
+    canonical_removed: "<the paper/solution that was removed>"
+    suppressed_by: "<how the canonical won>"
+    ripple_effects: ["<what changes without the canon>"]
+    plausible: <true | false>
+    confidence: <HIGH | MEDIUM | LOW | EXPLORATION>
+```
+
+**Consumed by:** assumption-excavator (surface assumptions in the suppressed alternative), contrarian (invert the suppressed alternative)
+**Consumes from:** (raw input + domain knowledge)
+
+---
+
 ## Trigger Conditions
 
 Use this skill when:

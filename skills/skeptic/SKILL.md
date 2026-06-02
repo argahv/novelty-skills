@@ -94,6 +94,27 @@ The paper tests on 3 benchmarks (CIFAR-10, ImageNet, LM1B) with 3 seeds each. On
 | Ignoring practicality | "This would need 10^6 replications" | The standard is 5-10 seeds with proper reporting |
 | Moving goalposts | When evidence is provided, demand more | State your evidence threshold upfront |
 
+## PRISM Integration
+
+In PRISM mode, consume ALL findings from all phases and produce evidence grades:
+
+```yaml
+pattern: skeptic
+input: "<all findings from all patterns>"
+findings:
+  - claim: "<evidence assessment>"
+    type: evidence_grade
+    targets_finding: "<which finding>"
+    grade: <A | B | C | D | F>
+    missing_evidence: "<what would be needed to upgrade>"
+    confidence: <HIGH | MEDIUM | LOW | EXPLORATION>
+```
+
+**Consumed by:** synthesis (evidence grades determine final confidence calibration)
+**Consumes from:** all generators and all reviewers (nothing escapes skepticism)
+
+---
+
 ## Trigger Conditions
 
 Use this skill when:

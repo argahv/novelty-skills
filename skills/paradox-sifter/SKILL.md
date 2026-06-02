@@ -81,6 +81,42 @@ The paradox with the highest combination of:
 | Not citing sources | Claims without evidence | Quote the exact limitation statement |
 | Ignoring temporal context | Older papers couldn't know | Account for when each paper was published |
 
+## PRISM Integration
+
+In PRISM mode, this pattern's input changes: instead of paper limitations, it cross-references **the structured findings from all 6 generators** in Phase 1.
+
+Output as structured YAML:
+
+```yaml
+pattern: paradox-sifter
+input: "<all generator findings>"
+cross_references:
+  convergences:
+    - claim: "<finding from 3+ sources>"
+      sources: [pattern_a, pattern_b, pattern_c]
+      confidence: HIGH
+  contradictions:
+    - claim_a: "<finding from pattern_x>"
+      claim_b: "<finding from pattern_y>"
+      source_a: pattern_x
+      source_b: pattern_y
+      potential_resolution: "<how to test which is right>"
+  creative_tensions:
+    - dimension: "<the pushed dimension>"
+      dreamer_claim: "<dreamer's 10× push>"
+      pragmatist_assessment: "<pragmatist's cost verdict>"
+      frontier: "<the boundary of feasible ambition>"
+  assumption_cascades:
+    - assumption: "<from assumption-excavator>"
+      inverted_by: "<contrarian's inversion of it>"
+      consequence_if_false: "<what breaks>"
+```
+
+**Consumed by:** synthesis (final output), skeptic (validation of cross-references)
+**Consumes from:** contrarian, assumption-excavator, cross-pollinator, heretic, counterfactual, dreamer
+
+---
+
 ## Trigger Conditions
 
 Use this skill when:

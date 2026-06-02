@@ -85,6 +85,27 @@ The most valuable output: a gap between what is claimed and what is proven. Comm
 | Ignoring empirical validation | "Theory is incomplete so paper is worthless" | Note the gap but acknowledge empirical evidence |
 | Over-reading into notation | "You used O(n) but it should be Θ(n)" | Fix notation but recognize the idea survives |
 
+## PRISM Integration
+
+In PRISM mode, consume findings from all 6 generators and produce structured formal gap analysis:
+
+```yaml
+pattern: theorist
+input: "<findings from generators>"
+findings:
+  - claim: "<formal gap identified>"
+    type: formal_gap
+    gap_type: <hidden_constant | unrealizable_condition | circular_reasoning | wrong_convergence_mode | missing_edge_case>
+    targets_finding: "<which finding from which generator>"
+    verdict: <"sound" | "minor_gap" | "major_gap" | "unsound">
+    confidence: <HIGH | MEDIUM | LOW | EXPLORATION>
+```
+
+**Consumed by:** synthesis (formal verdict feeds into consensus_view confidence)
+**Consumes from:** contrarian (inversion logic), heretic (hypotheses with formal claims), dreamer (10× feasibility)
+
+---
+
 ## Trigger Conditions
 
 Use this skill when:

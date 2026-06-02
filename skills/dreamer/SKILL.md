@@ -87,6 +87,48 @@ The 75% pass@1 is a static snapshot. A self-improving loop could turn 75% into 9
 | Mistaking impractical for impossible | "10× is impossible with today's hardware" | Impossible today ≠ impossible next year. Note the gap, don't dismiss |
 | Stopping at criticism without direction | "This isn't ambitious enough" | Always suggest the specific next step |
 
+## PRISM Integration
+
+In PRISM mode, this pattern runs in both DIVERGE (Phase 1) and CONVERGE (Phase 3):
+
+**Phase 1 — DIVERGE:** Push the original input's dimensions to 10×:
+
+```yaml
+pattern: dreamer
+phase: diverge
+input: "<original problem>"
+findings:
+  - claim: "<10× push>"
+    type: push
+    dimension: <data | scale | scope | constraints | metrics | robustness>
+    current: "<current state>"
+    ten_x: "<10× target>"
+    crazy_next_step: "<the one extension with disproportionate impact>"
+    first_experiment: "<minimum test>"
+    confidence: <HIGH | MEDIUM | LOW | EXPLORATION>
+```
+
+**Phase 3 — CONVERGE:** Push survivors from other generators to 10×:
+
+```yaml
+pattern: dreamer
+phase: converge
+input: "<findings from other generators>"
+findings:
+  - claim: "<10× push on survivor>"
+    type: push
+    targets_finding: "<which finding from which generator>"
+    ten_x: "<pushed version>"
+    first_experiment: "<minimum test>"
+    confidence: <HIGH | MEDIUM | LOW | EXPLORATION>
+```
+
+**Consumed by:** pragmatist (cost of 10× pushes), synthesis (crazy_next_step output)
+**Consumes from (Phase 1):** input problem only
+**Consumes from (Phase 3):** cross-pollinator (mechanisms to push), heretic (hypotheses to push)
+
+---
+
 ## Trigger Conditions
 
 Use this skill when:

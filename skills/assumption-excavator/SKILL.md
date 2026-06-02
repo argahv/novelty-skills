@@ -89,6 +89,27 @@ For each critical assumption, specify the minimum experiment that could falsify 
 | Not differentiating critical from trivial | Everything is an assumption | Flag the 1-3 that would kill the project |
 | Not suggesting a test | Assumptions are only dangerous if untested | Always propose the minimum falsification experiment |
 
+## PRISM Integration
+
+In PRISM mode, output findings as structured YAML:
+
+```yaml
+pattern: assumption-excavator
+input: "<original plan>"
+findings:
+  - claim: "<hidden assumption>"
+    type: assumption
+    category: <resource | behavioral | environmental | temporal | causal | scalability | compositional>
+    catastrophic_if_false: <true | false>
+    cheapest_test: "<minimum falsification experiment>"
+    confidence: <HIGH | MEDIUM | LOW | EXPLORATION>
+```
+
+**Consumed by:** contrarian (invert critical assumptions), pragmatist (cost of false assumptions)
+**Consumes from:** counterfactual (surface assumptions in suppressed alternatives)
+
+---
+
 ## Trigger Conditions
 
 Use this skill when:
